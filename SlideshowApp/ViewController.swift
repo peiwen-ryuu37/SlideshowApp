@@ -12,6 +12,12 @@ class ViewController: UIViewController {
     //画像配列index
     var nowIndex = 0
     
+    //タイマー
+    var timer: Timer!
+    
+    //タイマー用の時間のための変数
+    var timer_sec: Int = 0
+    
     //画像配列
     var imageArray: [UIImage] = [
         UIImage(named: "athia01-01")!,
@@ -63,10 +69,16 @@ class ViewController: UIViewController {
             forwardButton.isEnabled = false
             backwardButton.isEnabled = false
             
+            //タイマーを開始
+            self.startTimer()
+            
         } else {
             playAndStopButton.setTitle("再生", for: .normal)
             forwardButton.isEnabled = true
             backwardButton.isEnabled = true
+            
+            //タイマーを停止
+            self.stopTimer()
         }
     }
     
@@ -110,6 +122,30 @@ class ViewController: UIViewController {
         
         self.nowImageView.image = self.imageArray[nowIndex]
         print("nowIndex: \(self.nowIndex)")
+    }
+    
+    //タイマー開始
+    @objc func startTimer() {
+        if self.timer == nil {
+            self.timer_sec = 0
+            self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateImage(_:)), userInfo: nil, repeats: true)
+        }
+    }
+    
+    //タイマー停止
+    @objc func stopTimer() {
+        if self.timer != nil {
+            self.timer.invalidate()
+            self.timer = nil
+        }
+    }
+    
+    //タイマー更新
+    @objc func updateImage(_ timer: Timer) {
+        self.timer_sec += 2
+        print("timer: \(self.timer_sec)")
+        self.imageForward()
+        //self.timerLabel.text = String(format: "%.1f", self.timer_sec)
     }
     
 
