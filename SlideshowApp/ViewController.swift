@@ -145,7 +145,6 @@ class ViewController: UIViewController {
         self.timer_sec += 2
         print("timer: \(self.timer_sec)")
         self.imageForward()
-        //self.timerLabel.text = String(format: "%.1f", self.timer_sec)
     }
     
 
