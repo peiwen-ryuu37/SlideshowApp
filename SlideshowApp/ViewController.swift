@@ -24,7 +24,10 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var nowImageView: UIImageView!
-    @IBOutlet weak var playAndStopLabel: UIButton!
+
+    @IBOutlet weak var forwardButton: UIButton!
+    @IBOutlet weak var backwardButton: UIButton!
+    @IBOutlet weak var playAndStopButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +35,14 @@ class ViewController: UIViewController {
         
         //最初の画像設置
         self.setImage()
+    }
+    
+    //segueが動作することをViewControllerに通知する
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "nextViewSegue" {
+            let nextViewController = segue.destination as! NextViewController
+            nextViewController.selectedImage = self.imageArray[self.nowIndex]
+        }
     }
     
     @IBAction func forwardButton(_ sender: UIButton) {
@@ -46,6 +57,26 @@ class ViewController: UIViewController {
     
     @IBAction func playAndStopButton(_ sender: UIButton) {
         print("playAndStopButton be tapped")
+        
+        if playAndStopButton.titleLabel?.text == "再生" {
+            playAndStopButton.setTitle("停止", for: .normal)
+            forwardButton.isEnabled = false
+            backwardButton.isEnabled = false
+            
+        } else {
+            playAndStopButton.setTitle("再生", for: .normal)
+            forwardButton.isEnabled = true
+            backwardButton.isEnabled = true
+        }
+    }
+    
+    //画像をタップする時の画面遷移実行
+    @IBAction func onTapImage(_ sender: Any) {
+        performSegue(withIdentifier: "nextViewSegue", sender: nil)
+    }
+    
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+        
     }
     
     //最初の画像を設置するメソッド

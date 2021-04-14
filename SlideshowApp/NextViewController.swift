@@ -19,7 +19,6 @@ class NextViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         if self.selectedImage != nil {
-            print("selectedImage: \(String(describing: self.selectedImage))")
             self.selectedImageView.image = self.selectedImage
         } else {
             print("image not found")
