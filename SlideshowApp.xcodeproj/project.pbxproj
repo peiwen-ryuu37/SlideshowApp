@@ -13,6 +13,13 @@
 		5A1A15EE262675E1004CEF63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A1A15EC262675E1004CEF63 /* Main.storyboard */; };
 		5A1A15F0262675E3004CEF63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1A15EF262675E3004CEF63 /* Assets.xcassets */; };
 		5A1A15F3262675E3004CEF63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A1A15F1262675E3004CEF63 /* LaunchScreen.storyboard */; };
+		5A1A160126267B90004CEF63 /* athia01-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1A15FB26267B90004CEF63 /* athia01-01.png */; };
+		5A1A160226267B90004CEF63 /* takia01-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1A15FC26267B90004CEF63 /* takia01-01.png */; };
+		5A1A160326267B90004CEF63 /* takia02-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1A15FD26267B90004CEF63 /* takia02-01.png */; };
+		5A1A160426267B90004CEF63 /* athia02-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1A15FE26267B90004CEF63 /* athia02-01.png */; };
+		5A1A160526267B90004CEF63 /* takia03-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1A15FF26267B90004CEF63 /* takia03-01.png */; };
+		5A1A160626267B90004CEF63 /* athia03-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1A160026267B90004CEF63 /* athia03-01.png */; };
+		5A1A160926267EFB004CEF63 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A160826267EFB004CEF63 /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		5A1A15EF262675E3004CEF63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A1A15F2262675E3004CEF63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A1A15F4262675E3004CEF63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A1A15FB26267B90004CEF63 /* athia01-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "athia01-01.png"; sourceTree = "<group>"; };
+		5A1A15FC26267B90004CEF63 /* takia01-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "takia01-01.png"; sourceTree = "<group>"; };
+		5A1A15FD26267B90004CEF63 /* takia02-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "takia02-01.png"; sourceTree = "<group>"; };
+		5A1A15FE26267B90004CEF63 /* athia02-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "athia02-01.png"; sourceTree = "<group>"; };
+		5A1A15FF26267B90004CEF63 /* takia03-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "takia03-01.png"; sourceTree = "<group>"; };
+		5A1A160026267B90004CEF63 /* athia03-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "athia03-01.png"; sourceTree = "<group>"; };
+		5A1A160826267EFB004CEF63 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +54,12 @@
 		5A1A15DA262675E1004CEF63 = {
 			isa = PBXGroup;
 			children = (
+				5A1A15FB26267B90004CEF63 /* athia01-01.png */,
+				5A1A15FE26267B90004CEF63 /* athia02-01.png */,
+				5A1A160026267B90004CEF63 /* athia03-01.png */,
+				5A1A15FC26267B90004CEF63 /* takia01-01.png */,
+				5A1A15FD26267B90004CEF63 /* takia02-01.png */,
+				5A1A15FF26267B90004CEF63 /* takia03-01.png */,
 				5A1A15E5262675E1004CEF63 /* SlideshowApp */,
 				5A1A15E4262675E1004CEF63 /* Products */,
 			);
@@ -59,6 +79,7 @@
 				5A1A15E6262675E1004CEF63 /* AppDelegate.swift */,
 				5A1A15E8262675E1004CEF63 /* SceneDelegate.swift */,
 				5A1A15EA262675E1004CEF63 /* ViewController.swift */,
+				5A1A160826267EFB004CEF63 /* NextViewController.swift */,
 				5A1A15EC262675E1004CEF63 /* Main.storyboard */,
 				5A1A15EF262675E3004CEF63 /* Assets.xcassets */,
 				5A1A15F1262675E3004CEF63 /* LaunchScreen.storyboard */,
@@ -124,9 +145,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1A160626267B90004CEF63 /* athia03-01.png in Resources */,
 				5A1A15F3262675E3004CEF63 /* LaunchScreen.storyboard in Resources */,
 				5A1A15F0262675E3004CEF63 /* Assets.xcassets in Resources */,
 				5A1A15EE262675E1004CEF63 /* Main.storyboard in Resources */,
+				5A1A160326267B90004CEF63 /* takia02-01.png in Resources */,
+				5A1A160526267B90004CEF63 /* takia03-01.png in Resources */,
+				5A1A160226267B90004CEF63 /* takia01-01.png in Resources */,
+				5A1A160426267B90004CEF63 /* athia02-01.png in Resources */,
+				5A1A160126267B90004CEF63 /* athia01-01.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A1A15EB262675E1004CEF63 /* ViewController.swift in Sources */,
+				5A1A160926267EFB004CEF63 /* NextViewController.swift in Sources */,
 				5A1A15E7262675E1004CEF63 /* AppDelegate.swift in Sources */,
 				5A1A15E9262675E1004CEF63 /* SceneDelegate.swift in Sources */,
 			);
