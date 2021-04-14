@@ -85,6 +85,12 @@ class ViewController: UIViewController {
     //画像をタップする時の画面遷移実行
     @IBAction func onTapImage(_ sender: Any) {
         performSegue(withIdentifier: "nextViewSegue", sender: nil)
+        
+        //自動送り中に画面遷移して、戻ってくると停止する
+        playAndStopButton.setTitle("再生", for: .normal)
+        forwardButton.isEnabled = true
+        backwardButton.isEnabled = true
+        self.stopTimer()
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
